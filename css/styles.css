@@ -354,6 +354,20 @@ another button with secondary color
   margin-bottom: 2rem;
 }
 
+@media screen and (min-width: 1024px) {
+  .plan__name {
+    font-size: 1.4rem;
+  }
+  .plan__price {
+    font-size: 5rem;
+  }
+  .plan__billing-cycle {
+    font-size: 1.6rem;
+  }
+}
+
+/* popular plan */
+
 .plan--popular .card__header {
   position: relative;
 }
@@ -367,14 +381,20 @@ another button with secondary color
   right: 5%;
 }
 
-@media screen and (min-width: 1024px) {
-  .plan__name {
-    font-size: 1.4rem;
-  }
-  .plan__price {
-    font-size: 5rem;
-  }
-  .plan__billing-cycle {
-    font-size: 1.6rem;
-  }
+/* Media */
+
+.media {
+  display: flex;
+}
+
+.media__title {
+  margin-top: 0;
+}
+
+.media__body {
+  margin: 0 2rem;
+}
+
+.media__image {
+  margin-top: 1rem;
 }

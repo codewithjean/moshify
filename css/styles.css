@@ -642,6 +642,7 @@ another button with secondary color
 
 .block__header {
   text-align: center;
+  margin-bottom: 4rem;
 }
 
 .block__heading {

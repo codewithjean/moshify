@@ -352,11 +352,19 @@ another button with secondary color
   color: white;
 }
 
+.card--primary .badge--primary {
+  background: #126de4;
+}
+
 .card--secondary .badge--secondary {
   background: #02cdf1;
 }
 
 /* Plans */
+
+.plan {
+  transition: transform 0.2s ease-out;
+}
 
 .plan__name {
   color: #fff;
@@ -387,6 +395,14 @@ another button with secondary color
   margin-bottom: 2rem;
 }
 
+.plan:hover {
+  transform: scale(1.05);
+}
+
+.plan--popular:hover {
+  transform: scale(1.15);
+}
+
 @media screen and (min-width: 1024px) {
   .plan__name {
     font-size: 1.4rem;
@@ -400,6 +416,10 @@ another button with secondary color
 }
 
 /* popular plan */
+
+.plan--popular {
+  transform: scale(1.1); /*10% larger*/
+}
 
 .plan--popular .card__header {
   position: relative;
@@ -756,4 +776,18 @@ another button with secondary color
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
+}
+
+/* Plans Blocks */
+
+.block-plans .grid {
+  gap: 8rem 4rem;
+}
+
+.block-plans .card {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
 }
